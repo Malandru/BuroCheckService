@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:tns="http://burodecredito.com/consultas"
+                  xmlns:dt="http://fintech.org/data"
+                  targetNamespace="http://burodecredito.com/consultas">
+    <wsdl:types>
+        <xs:schema targetNamespace="http://burodecredito.com/consultas" elementFormDefault="qualified">
+
+            <xs:import schemaLocation="data.xsd" namespace="http://fintech.org/data"/>
+
+            <xs:element name="buroRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="cliente" type="dt:cliente"/>
+                        <xs:element name="creditos" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="buroResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aprobado" type="xs:boolean"/>
+                        <xs:element name="motivo" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:schema>
+    </wsdl:types>
+
+    <wsdl:message name="BuroMessageRequest">
+        <wsdl:part name="parameter" element="tns:buroRequest" />
+    </wsdl:message>
+
+    <wsdl:message name="BuroMessageResponse">
+        <wsdl:part name="parameter" element="tns:buroResponse" />
+    </wsdl:message>
+
+    <wsdl:portType name="NewPortType">
+        <wsdl:operation name="BuroOperation">
+            <wsdl:input message="tns:BuroMessageRequest" />
+            <wsdl:output message="tns:BuroMessageResponse" />
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="BuroBinding" type="tns:NewPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="BuroOperation">
+            <soap:operation soapAction="http://burodecredito.com/consultas/BuroOperation" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="BuroService">
+        <wsdl:port name="NewPort" binding="tns:BuroBinding">
+            <soap:address location="http://localhost:8080/axis2/services/BuroService" />
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+.idea/
+bin/
+build/
+.gradle/
+lib/
+BuroCheckService.iml
+gradlew
+gradlew.bat
