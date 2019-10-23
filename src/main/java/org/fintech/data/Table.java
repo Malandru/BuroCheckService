@@ -16,7 +16,7 @@ package org.fintech.data;
 public interface Table extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Table.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1BBBF87D01116646CE89AA618205A526").resolveHandle("tabledff9type");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Table.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("tabledff9type");
     
     /**
      * Gets array of all "no_amortizacion" elements

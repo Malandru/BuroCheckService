@@ -17,7 +17,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface StringDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(StringDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1BBBF87D01116646CE89AA618205A526").resolveHandle("string92a7doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(StringDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("string92a7doctype");
     
     /**
      * Gets the "string" element

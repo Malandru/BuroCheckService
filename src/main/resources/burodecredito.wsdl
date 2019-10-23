@@ -4,6 +4,10 @@
                   xmlns:dt="http://fintech.org/data"
                   targetNamespace="http://burodecredito.com/consultas">
     <wsdl:types>
+        <xs:schema targetNamespace="http://fintech.org/data" elementFormDefault="qualified">
+            <xs:include schemaLocation="data.xsd"/>
+        </xs:schema>
+
         <xs:schema targetNamespace="http://burodecredito.com/consultas" elementFormDefault="qualified">
 
             <xs:import schemaLocation="data.xsd" namespace="http://fintech.org/data"/>
