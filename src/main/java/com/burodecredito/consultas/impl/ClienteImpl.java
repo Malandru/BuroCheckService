@@ -1,17 +1,17 @@
 /*
  * XML Type:  cliente
- * Namespace: http://fintech.org/data
- * Java type: org.fintech.data.Cliente
+ * Namespace: http://burodecredito.com/consultas
+ * Java type: com.burodecredito.consultas.Cliente
  *
  * Automatically generated - do not modify.
  */
-package org.fintech.data.impl;
+package com.burodecredito.consultas.impl;
 /**
- * An XML cliente(@http://fintech.org/data).
+ * An XML cliente(@http://burodecredito.com/consultas).
  *
  * This is a complex type.
  */
-public class ClienteImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements org.fintech.data.Cliente
+public class ClienteImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements com.burodecredito.consultas.Cliente
 {
     
     public ClienteImpl(org.apache.xmlbeans.SchemaType sType)
@@ -20,13 +20,13 @@ public class ClienteImpl extends org.apache.xmlbeans.impl.values.XmlComplexConte
     }
     
     private static final javax.xml.namespace.QName RFC$0 = 
-        new javax.xml.namespace.QName("http://fintech.org/data", "RFC");
+        new javax.xml.namespace.QName("http://burodecredito.com/consultas", "RFC");
     private static final javax.xml.namespace.QName NOMBRE$2 = 
-        new javax.xml.namespace.QName("http://fintech.org/data", "nombre");
+        new javax.xml.namespace.QName("http://burodecredito.com/consultas", "nombre");
     private static final javax.xml.namespace.QName APELLIDO$4 = 
-        new javax.xml.namespace.QName("http://fintech.org/data", "apellido");
+        new javax.xml.namespace.QName("http://burodecredito.com/consultas", "apellido");
     private static final javax.xml.namespace.QName DOMICILIO$6 = 
-        new javax.xml.namespace.QName("http://fintech.org/data", "domicilio");
+        new javax.xml.namespace.QName("http://burodecredito.com/consultas", "domicilio");
     
     
     /**

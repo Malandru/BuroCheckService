@@ -17,7 +17,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface GMonthDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GMonthDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("gmonth32efdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GMonthDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC94B8AEC748F7D94B221C90E6121E802").resolveHandle("gmonth32efdoctype");
     
     /**
      * Gets the "gMonth" element

@@ -17,7 +17,7 @@ package com.burodecredito.consultas;
 public interface BuroResponseDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("buroresponsebe8bdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroResponseDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC94B8AEC748F7D94B221C90E6121E802").resolveHandle("buroresponsebe8bdoctype");
     
     /**
      * Gets the "buroResponse" element
@@ -42,7 +42,7 @@ public interface BuroResponseDocument extends org.apache.xmlbeans.XmlObject
     public interface BuroResponse extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("buroresponsef018elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC94B8AEC748F7D94B221C90E6121E802").resolveHandle("buroresponsef018elemtype");
         
         /**
          * Gets the "aprobado" element

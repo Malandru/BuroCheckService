@@ -17,7 +17,7 @@ package com.burodecredito.consultas;
 public interface BuroRequestDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroRequestDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("burorequest85afdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroRequestDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC94B8AEC748F7D94B221C90E6121E802").resolveHandle("burorequest85afdoctype");
     
     /**
      * Gets the "buroRequest" element
@@ -42,22 +42,22 @@ public interface BuroRequestDocument extends org.apache.xmlbeans.XmlObject
     public interface BuroRequest extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroRequest.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s5DB65761D83248CF676B4FDE483A3588").resolveHandle("burorequestd204elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(BuroRequest.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC94B8AEC748F7D94B221C90E6121E802").resolveHandle("burorequestd204elemtype");
         
         /**
          * Gets the "cliente" element
          */
-        org.fintech.data.Cliente getCliente();
+        com.burodecredito.consultas.Cliente getCliente();
         
         /**
          * Sets the "cliente" element
          */
-        void setCliente(org.fintech.data.Cliente cliente);
+        void setCliente(com.burodecredito.consultas.Cliente cliente);
         
         /**
          * Appends and returns a new empty "cliente" element
          */
-        org.fintech.data.Cliente addNewCliente();
+        com.burodecredito.consultas.Cliente addNewCliente();
         
         /**
          * Gets the "creditos" element

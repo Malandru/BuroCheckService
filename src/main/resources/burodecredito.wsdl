@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xmlns:tns="http://burodecredito.com/consultas"
-                  xmlns:dt="http://fintech.org/data"
                   targetNamespace="http://burodecredito.com/consultas">
     <wsdl:types>
-        <xs:schema targetNamespace="http://fintech.org/data" elementFormDefault="qualified">
-            <xs:include schemaLocation="data.xsd"/>
-        </xs:schema>
-
         <xs:schema targetNamespace="http://burodecredito.com/consultas" elementFormDefault="qualified">
-
-            <xs:import schemaLocation="data.xsd" namespace="http://fintech.org/data"/>
 
             <xs:element name="buroRequest">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="cliente" type="dt:cliente"/>
+                        <xs:element name="cliente" type="tns:cliente"/>
                         <xs:element name="creditos" type="xs:int"/>
                     </xs:sequence>
                 </xs:complexType>
@@ -29,6 +22,15 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+
+            <xs:complexType name="cliente">
+                <xs:sequence>
+                    <xs:element name="RFC" type="xs:string"/>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="apellido" type="xs:string"/>
+                    <xs:element name="domicilio" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
 
         </xs:schema>
     </wsdl:types>

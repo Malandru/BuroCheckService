@@ -95,13 +95,13 @@ public class BuroRequestDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Gets the "cliente" element
          */
-        public org.fintech.data.Cliente getCliente()
+        public com.burodecredito.consultas.Cliente getCliente()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.fintech.data.Cliente target = null;
-                target = (org.fintech.data.Cliente)get_store().find_element_user(CLIENTE$0, 0);
+                com.burodecredito.consultas.Cliente target = null;
+                target = (com.burodecredito.consultas.Cliente)get_store().find_element_user(CLIENTE$0, 0);
                 if (target == null)
                 {
                     return null;
@@ -113,16 +113,16 @@ public class BuroRequestDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "cliente" element
          */
-        public void setCliente(org.fintech.data.Cliente cliente)
+        public void setCliente(com.burodecredito.consultas.Cliente cliente)
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.fintech.data.Cliente target = null;
-                target = (org.fintech.data.Cliente)get_store().find_element_user(CLIENTE$0, 0);
+                com.burodecredito.consultas.Cliente target = null;
+                target = (com.burodecredito.consultas.Cliente)get_store().find_element_user(CLIENTE$0, 0);
                 if (target == null)
                 {
-                    target = (org.fintech.data.Cliente)get_store().add_element_user(CLIENTE$0);
+                    target = (com.burodecredito.consultas.Cliente)get_store().add_element_user(CLIENTE$0);
                 }
                 target.set(cliente);
             }
@@ -131,13 +131,13 @@ public class BuroRequestDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Appends and returns a new empty "cliente" element
          */
-        public org.fintech.data.Cliente addNewCliente()
+        public com.burodecredito.consultas.Cliente addNewCliente()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.fintech.data.Cliente target = null;
-                target = (org.fintech.data.Cliente)get_store().add_element_user(CLIENTE$0);
+                com.burodecredito.consultas.Cliente target = null;
+                target = (com.burodecredito.consultas.Cliente)get_store().add_element_user(CLIENTE$0);
                 return target;
             }
         }
