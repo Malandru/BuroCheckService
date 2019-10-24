@@ -18,7 +18,7 @@
     <property name="web.service.skeleton" value="${lib}/${wsdl.name}-skeleton-${web.service.version}.jar"/>
 
     <path id="axis2.class.path">
-        <fileset dir="${axis2.home}/lib" includes="*.jar"/>
+        <fileset dir="${tomcat-deployment}/axis2/WEB-INF/lib" includes="*.jar"/>
     </path>
 
 <!--    CLEANERS HERE       -->
